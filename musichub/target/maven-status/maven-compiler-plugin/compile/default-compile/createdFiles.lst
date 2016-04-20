@@ -1,0 +1,5 @@
+musichub\DAO\ProductDAOImpl.class
+musichub\Controller\HomeControllerAnnotation.class
+musichub\Model\Product.class
+musichub\DAO\ProductDAO.class
+musichub\DAO\Service.class
