@@ -1,0 +1,9 @@
+package packs.musiccontroller;
+
+public class MusicControl {
+	public String home()
+	{
+		return "index";
+	}
+
+}

@@ -1,0 +1,5 @@
+package packs.dao;
+
+public interface ProductDAOInterface {
+
+}

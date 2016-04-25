@@ -1,0 +1,6 @@
+package packs.dao;
+
+public interface ProductDAOInterface {
+	public void getAllProducts();
+
+}

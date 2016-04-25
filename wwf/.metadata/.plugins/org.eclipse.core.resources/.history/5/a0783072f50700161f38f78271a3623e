@@ -1,0 +1,56 @@
+package packs.musiccontroller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MusicControl {
+	@RequestMapping("/")
+	public String home()
+	{
+		return "index";
+	}
+	@RequestMapping("businessparter")
+	public String businessparter()
+	{
+		return "businessparter";
+	}
+	@RequestMapping("contactus")
+	public String contactus()
+	{
+		return "contactus";
+	}
+	@RequestMapping("aboutus")
+	public String aboutus()
+	{
+		return "aboutus";
+	}
+	@RequestMapping("custreview")
+	public String custreview()
+	{
+		return "custreview";
+	}
+	@RequestMapping("register")
+	public String register()
+	{
+		return "register";
+	}
+	@RequestMapping("sign")
+	public String sign()
+	{
+		return "sign";
+	}
+	@RequestMapping("whatecomm")
+	public String whatecomm()
+	{
+		return "whatecomm";
+	}
+	@RequestMapping("sign")
+	public String sign()
+	{
+		return "sign";
+	}
+	
+	
+
+}

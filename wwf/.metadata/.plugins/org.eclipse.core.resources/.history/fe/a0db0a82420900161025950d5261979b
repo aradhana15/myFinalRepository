@@ -1,0 +1,39 @@
+<%@include file="header.jsp"%>
+<html>
+	<body>
+		<div class="container">
+  <!-- <h2>Product Details</h2>
+  <p>Here are the new products available in this site...</p>      -->
+  <div class="table-responsive">       
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Product Id</th>
+        <th>Name</th>
+        <th>Manufacturer</th>
+        <th>Price</th>
+        <th>Details</th>
+        <th>Icon</th>
+      </tr>
+    </thead>
+    <tbody>
+	      <tr>
+        <td>${pd.id}</td>
+        <td>${pd.name}</td>
+        <td>${pd.manfacurer}</td>
+        <td>${pd.desc}</td>
+        <td>${pd.}
+        
+        <td><img src="<c:url value='${pd.image}'/>" height="50px" width="70px"/></td>
+      </tr>
+      
+       </tbody>
+    
+  </table>
+  </div>
+</div>
+
+		
+
+	</body>
+</html>

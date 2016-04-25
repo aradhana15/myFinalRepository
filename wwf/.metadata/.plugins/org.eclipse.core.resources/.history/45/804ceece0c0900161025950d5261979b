@@ -1,0 +1,22 @@
+package packs.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import packs.dao.ProductDAO;
+import packs.model.Product;
+
+public class ServiceClass {
+@Autowired 
+ProductDAO p;
+	
+@Autowired	
+public ServiceClass(ProductDAO p) {
+	this.p = p;
+}
+	
+	public List<Product> getAllProducts() {
+		return p.getAllProducts();
+	}
+}

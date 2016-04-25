@@ -1,0 +1,24 @@
+package packs.dao;
+
+import java.util.List;
+
+import packs.model.Product;
+
+
+public class ProductDAO implements ProductDAOInterface {
+	List<Product> ob;
+
+	
+	public ProductDAO() {
+	
+		
+	}
+
+
+	public void getAllProducts() {
+		
+		
+	}
+	
+
+}

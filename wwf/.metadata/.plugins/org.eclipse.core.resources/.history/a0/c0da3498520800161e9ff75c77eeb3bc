@@ -1,0 +1,5 @@
+package packs.model;
+
+public class ServiceClass {
+
+}

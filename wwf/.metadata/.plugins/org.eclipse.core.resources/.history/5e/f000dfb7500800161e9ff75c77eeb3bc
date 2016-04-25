@@ -1,0 +1,11 @@
+package packs.model;
+
+public class Product {
+	int id,price;
+	String name,desc,manufacturer,image;
+	public Product()
+	{
+		
+	}
+
+}

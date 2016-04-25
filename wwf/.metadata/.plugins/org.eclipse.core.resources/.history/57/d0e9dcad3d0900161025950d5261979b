@@ -1,0 +1,82 @@
+package packs.musiccontroller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import packs.dao.ServiceClass;
+import packs.model.Product;
+
+@Controller
+public class MusicControl {
+	
+	@Autowired
+	ServiceClass sc;
+	
+	@Autowired
+	public MusicControl(ServiceClass sc) {
+		this.sc = sc;
+	}
+	@RequestMapping("/")
+	public String home()
+	{
+		return "index";
+	}
+	@RequestMapping("/businessparter")
+	public String businessparter()
+	{
+		return "businessparter";
+	}
+	@RequestMapping("/contactus")
+	public String contactus()
+	{
+		return "contactus";
+	}
+	@RequestMapping("/aboutus")
+	public String aboutus()
+	{
+		return "aboutus";
+	}
+	@RequestMapping("/custreview")
+	public String custreview()
+	{
+		return "custreview";
+	}
+	@RequestMapping("/register")
+	public String register()
+	{
+		return "register";
+	}
+	@RequestMapping("/sign")
+	public String sign()
+	{
+		return "sign";
+	}
+	@RequestMapping("/whatecomm")
+	public String whatecomm()
+	{
+		return "whatecomm";
+	}
+	@RequestMapping("/yecomm")
+	public String yecomm()
+	{
+		return "yecomm";
+	}
+	@RequestMapping("/product")
+	public String product(ModelMap model)
+	{
+		List<Product>prod=sc.getAllProducts();//getAllProducts();
+		model.addAttribute("products",prod);
+		return "product";
+	}
+	
+	@RequestMapping("/house")
+	public String house()
+	{
+		return "house";
+	}
+	
+}

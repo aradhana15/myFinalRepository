@@ -1,0 +1,12 @@
+package packs.dao;
+
+public class ProductDAO implements ProductDAOInterface {
+	List<Product>
+
+	public void getAllProducts() {
+		
+		
+	}
+	
+
+}

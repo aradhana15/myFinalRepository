@@ -1,0 +1,10 @@
+package packs.dao;
+
+import java.util.List;
+
+import packs.model.Product;
+
+public interface ProductDAOInterface {
+	public List<Product> getAllProducts();
+
+}

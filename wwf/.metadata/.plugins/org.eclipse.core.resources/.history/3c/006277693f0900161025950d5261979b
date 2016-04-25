@@ -1,0 +1,32 @@
+<%@include file="header.jsp"%>
+<body>
+<div class="container">
+  <!-- <h2>Product Details</h2>
+  <p>Here are the new products available in this site...</p>      -->
+  <div class="table-responsive">       
+  <table class="table table-bordered" width="30px">
+    <thead>
+      <tr>
+        <th>Product Id</th>
+        <th>Name</th>
+        <th>Icon</th>
+      </tr>
+    </thead>
+	<c:forEach var="pd" items="${products}">
+	<tbody>
+      <tr>
+        <td>${pd.id}</td>
+        <td>${pd.name}</td>
+        <td><img src="<c:url value='${pd.image}'/>" height="40px" width="50px"/></td>
+      </tr>
+       </tbody>
+    </c:forEach>
+  </table>
+  </div>
+</div>
+
+
+
+  
+
+</body>

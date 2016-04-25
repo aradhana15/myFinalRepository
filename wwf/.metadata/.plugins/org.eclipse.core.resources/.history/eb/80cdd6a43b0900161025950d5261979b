@@ -1,0 +1,40 @@
+<%@include file="header.jsp"%>
+<body>
+<div class="container">
+  <h2>Product Details</h2>
+  <p>Here are the new products available in this site...</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Product Id</th>
+        <th>Name</th>
+        <th>Icon</th>
+      </tr>
+    </thead>
+<c:forEach var="pd" items="products">
+
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</c:forEach>
+  
+
+</body>

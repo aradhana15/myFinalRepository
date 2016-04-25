@@ -1,0 +1,11 @@
+package packs.dao;
+
+public class ProductDAO implements ProductDAOInterface {
+
+	public void getAllProducts() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}
